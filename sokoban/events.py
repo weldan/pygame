@@ -15,6 +15,9 @@ class sokoban_events(object):
         for self.event in events.get():
             if self.event.type == QUIT:
                 sys.exit(1)
+            elif self.event.type == KEYDOWN:
+                if self.event.key == 27:
+                    sys.exit(1)
             else:
                 self.process() 
 
@@ -22,4 +25,4 @@ class sokoban_events(object):
     process event
     """
     def process(self):
-        print self.event          
+        print self.event              

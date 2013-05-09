@@ -7,6 +7,6 @@ class sokoban_windows(object):
         
     def create(self):
         window = pygame.display
-        window.set_mode(self.size)
+        window.set_mode(self.size).convert_alpha()
         window.set_caption(self.caption) 
         window.update()

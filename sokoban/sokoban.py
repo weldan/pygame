@@ -10,7 +10,7 @@ import game
 run game
 """
 def main():
-    window = windows.sokoban_windows((400, 300), "Sokoban")
+    window = windows.sokoban_windows((800, 600), "Sokoban")
     window.create() 
 
     while True:

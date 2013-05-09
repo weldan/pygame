@@ -1,5 +1,4 @@
 import pygame
-import sys
 
 class sokoban_windows(object):
     def __init__(self, size, caption):

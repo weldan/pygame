@@ -5,6 +5,7 @@
 import pygame
 import pygame.mixer
 import os
+import sys
 # constants like QUIT, KEYDOWN etc
 from pygame.locals import * 
 
@@ -31,10 +32,11 @@ y = 0
 while True:  
     for event in pygame.event.get(): 
         if event.type == QUIT: 
-            pygame.display.quit()
+            # use sys.exit() to quit program
+            sys.exit(1)
         elif event.type == KEYDOWN:
             if event.key == 27: # user press esc button
-                pygame.display.quit()
+                sys.exit(1)
             elif event.key == 275: # user press right arrow
                 x += 1
                 pygame.display.set_caption('Move forward!')

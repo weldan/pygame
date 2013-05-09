@@ -5,6 +5,7 @@ import pygame
 import pygame.mixer
 import os
 import time
+import sys
 # constants like QUIT, KEYDOWN etc
 from pygame.locals import * 
 
@@ -32,10 +33,11 @@ y = 0
 while True:  
     for event in pygame.event.get(): 
         if event.type == QUIT: 
-            pygame.display.quit()
+            # use sys.exit() to quit
+            sys.exit(1)
         elif event.type == KEYDOWN:
             if event.key == 27: # user press esc button
-                pygame.display.quit()
+                sys.exit(1)
    
     screen.blit(surface, (x,y))     
     pygame.display.flip() 

@@ -7,6 +7,9 @@ import os
 import time
 # constants like QUIT, KEYDOWN etc
 from pygame.locals import * 
+
+# set screen center on load
+os.environ['SDL_VIDEO_CENTERED'] = '1'
  
 pygame.init() 
 

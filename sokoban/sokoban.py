@@ -1,14 +1,7 @@
 """
 sokoban
-
-note:
-"
-ni mende belum siap, 
-nak map screen pun taktau lagi. 
-akan diupdate dari masa ke semasa
-"
-- weldan, may 10, 2013
 """
+
 import events
 import windows
 import game

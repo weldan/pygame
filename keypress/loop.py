@@ -39,5 +39,5 @@ while True:
     x += 1
     if x == 468:
         x = 0
-    time.sleep(1)
+    time.sleep(0.2)
                       

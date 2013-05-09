@@ -9,10 +9,13 @@ import time
 from pygame.locals import * 
  
 pygame.init() 
- 
-window = pygame.display.set_mode((468, 60)) 
+
+# set screen size to match picture
+window = pygame.display.set_mode((468, 50)) 
 pygame.display.set_caption('My first Pygame program') 
 screen = pygame.display.get_surface() 
+# fill screen with white color
+screen.fill((255,255,255))
 pic = os.path.join(".","nyan_cat_icon__3_by_kooliodragon-d3f22qi.gif")
 surface = pygame.image.load(pic) 
 

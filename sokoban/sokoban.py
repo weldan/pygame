@@ -2,9 +2,9 @@
 sokoban
 """
 
-import events
-import windows
-import game
+import lib.events as events
+import lib.windows as windows
+import lib.game as game
 
 """
 run game

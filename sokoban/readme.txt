@@ -12,7 +12,7 @@ bezakan objek dalam grid list?
 contoh output grid list:
 1. print grids.get(0,0)
 
-```shell
+```bash
 <rect(10, 10, 50, 50)>
 ```
 

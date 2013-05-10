@@ -1,6 +1,7 @@
 http://en.wikipedia.org/wiki/Sokoban
 
 current progress:
+
 1. bagi stick man jalan on key press
 
 

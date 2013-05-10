@@ -25,4 +25,5 @@ class sokoban_events(object):
     process event
     """
     def process(self):
-        print self.event              
+        pass
+        #print self.event              

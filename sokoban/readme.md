@@ -3,12 +3,14 @@ http://en.wikipedia.org/wiki/Sokoban
 current progress:
 
 bezakan objek dalam grid list?
+
 1. stick man (player)
 2. dinding tepi / penghalang?
 3. box yg nak kena tolak ke target 
 4. target 
 
 contoh output grid list:
+
 1. print grids.get(0,0)
 
 ```

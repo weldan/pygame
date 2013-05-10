@@ -35,6 +35,8 @@ class sokoban_windows(object):
         
         pic = os.path.join("data","stickmang.resized.jpg")
         gambo = pygame.image.load(pic)
-        # stick man 
-        grids.grid[0][0] = window.get_surface().blit(gambo, (10,10))
-        window.update()     
+        # stick man
+        grids.grid[0][0] = { 'player': window.get_surface().blit(gambo, (10,10)) } 
+        window.update()
+           
+        print grids.grid  

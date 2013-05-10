@@ -41,5 +41,8 @@ class sokoban_grid(object):
     get grid by row and column position
     """    
     def get(self, row, column):
-        return self.grid[row][column]
+        try:
+            return self.grid[row][column]
+        except IndexError:
+            return 0
                         

@@ -37,4 +37,4 @@ class sokoban_windows(object):
         gambo = pygame.image.load(pic)
         # stick man 
         grids.grid[0][0] = window.get_surface().blit(gambo, (10,10))
-        window.update()         
+        window.update()     

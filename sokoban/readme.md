@@ -2,7 +2,9 @@ http://en.wikipedia.org/wiki/Sokoban
 
 current progress:
 
-1. bagi stick man jalan on key press
+1. lukis kotak
+2. lukis bulat bulat
+3. letak kotak dan bulat bulat secara rawak dalam skrin
 
 
 

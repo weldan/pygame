@@ -1,6 +1,6 @@
 http://en.wikipedia.org/wiki/Sokoban
 
-current progress:
+pending tasks:
 
 1. lukis kotak
 2. lukis bulat bulat

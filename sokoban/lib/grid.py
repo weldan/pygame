@@ -1,38 +1,37 @@
+"""
+grids
+"""
+
 import pygame
+import settings
 
 class sokoban_grid(object):
-    def __init__(self, screen, width, height, margin, 
-        colour, rowsize, columnsize, backgroundcolour):
-        self.screen = screen
-        self.width = width
-        self.height = height
-        self.margin = margin 
-        self.colour = colour
-        self.rowsize = rowsize
-        self.columnsize = columnsize
-        self.backgroundcolour = backgroundcolour
+    def __init__(self):
+        self.setting = settings.grid_setting 
+        self.size = (settings.window_setting['width'], settings.window_setting['height'])
+        self.screen = pygame.display.set_mode(self.size, 0, 24)
     
     """
     draw grid
     """    
     def draw(self):
-        pygame.display.get_surface().fill(self.backgroundcolour)
+        pygame.display.get_surface().fill(self.setting['backgroundcolour'])
         self.grid = []
-        for row in range(self.rowsize):
+        for row in range(self.setting['rowsize']):
             self.grid.append([])
-            for column in range(self.columnsize):
+            for column in range(self.setting['columnsize']):
                 self.grid[row].append(0)
                 pygame.draw.rect(self.screen, 
-                    self.colour, 
+                    self.setting['colour'], 
                     [
-                        (self.margin + self.width) 
+                        (self.setting['margin'] + self.setting['width']) 
                         * column 
-                        + self.margin,
-                        (self.margin + self.height) 
+                        + self.setting['margin'],
+                        (self.setting['margin'] + self.setting['height']) 
                         * row 
-                        + self.margin,
-                        self.width,
-                        self.height
+                        + self.setting['margin'],
+                        self.setting['width'],
+                        self.setting['height']
                     ]
                )
         pygame.display.flip() 
@@ -45,4 +44,6 @@ class sokoban_grid(object):
             return self.grid[row][column]
         except IndexError:
             return 0
-                        
+                             
+        
+                                       

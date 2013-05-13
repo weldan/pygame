@@ -3,8 +3,8 @@ http://en.wikipedia.org/wiki/Sokoban
 pending tasks:
 
 1. lukis kotak
-2. lukis bulat bulat
-3. letak kotak dan bulat bulat secara rawak dalam skrin
+2. lukis titik
+3. letak kotak dan titik secara rawak dalam skrin
 
 
 

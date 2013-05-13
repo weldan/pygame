@@ -20,3 +20,4 @@ resources:
 6. http://docs.python.org/2/tutorial/classes.html
 7. http://docs.python.org/2/tutorial/errors.html
 8. http://mikegrouchy.com/blog/2012/05/be-pythonic-__init__py.html
+9. http://mijingo.com/products/screencasts/python-for-php-developers/

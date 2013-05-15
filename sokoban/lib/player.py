@@ -11,12 +11,12 @@ class sokoban_player(object):
         self.setting = settings.player_setting  
         self.grid_setting = settings.grid_setting
         self.grid = grid
-        self.sgrids = grids.sokoban_grid()
+        self.grid_on_screen = grids.sokoban_grid()
         self.window = pygame.display 
         self.draw()
                 
     def draw(self):
-        self.sgrids.draw()
+        self.grid_on_screen.draw()
         player_image = pygame.image.load(self.setting['image'])
         try:
             width_position = self.grid_setting['width'] * self.location_column + 10
